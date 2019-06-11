@@ -1,0 +1,42 @@
+html{
+  font-family: Helvetica, Arial, sans-serif;
+  text-align: left;
+}
+
+header{
+}
+ul{
+  list-style-type: none;
+  padding: 0;
+}
+aside{
+  float: left;
+  color: white;
+  padding-right: 50px;
+  background-color: black;
+}
+.content{
+  float: left;
+}
+footer{
+  clear: both;
+}
+
+a:link {
+  color: #fff;
+}
+
+/* visited link */
+a:visited {
+  color: #ddd;
+}
+
+/* mouse over link */
+a:hover {
+  color: #ada;
+}
+
+/* selected link */
+a:active {
+  color: #fff;
+}
