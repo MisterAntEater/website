@@ -52,7 +52,7 @@ function init() {
 
   //set up the cumbersome number of GUI elements
   gui.add(patchParams, "show_vertices");
-  gui.add(patchParams, "resolution").min(1).max(25).step(1);
+  gui.add(patchParams, "resolution").min(2).max(50).step(1);
   gui.add(patchParams, 'y00').min(-10).max(10);
   gui.add(patchParams, 'y01').min(-10).max(10);
   gui.add(patchParams, 'y02').min(-10).max(10);
@@ -89,7 +89,7 @@ function init() {
 
   //init renderer
 	renderer = new THREE.WebGLRenderer();
-	renderer.setSize(window.innerWidth, window.innerHeight);
+	renderer.setSize(600, 450);
 	document.getElementById('webgl').appendChild(renderer.domElement);
 	renderer.render(
 		scene,

@@ -2,19 +2,51 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>About Me</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Gabriel Comer's Website</title>
   </head>
   <body>
-    <h1>Gabriel Comer's Website</h1>
-    <nav>
-      <a href="/index.html">Return to Homepage</a>
+    <script src="sidebar.js"></script>
+    <nav class="sidebar">
+      <ul>
+        <li><a href="javascript:void(0)" class="closebutton" onclick="closeNav()" style="text-align: right; font-size: 2em;">&times;</a></li>
+        <li><a href="/er.html">Home</a></li>
+        <li><a href="/resume.pdf">Résumé</a></li>
+        <li><a href="/bezier_curve.html">Bézier Curve demo</a></li>
+        <li><a href="/bezier_patch.html">Bézier Patch demo</a></li>
+      </ul>
     </nav>
-    <h2>About Me</h2>
-    <p></p>
+    <button class="openbutton" onclick="openNav()">&#9776;</button>
+    <div class="content">
+      <header>
+        <h1>Gabriel Comer's Website</h1>
+        <h2>About Me</h2>
+      </header>
+      <hr />
+    </div>
+    <div class="content">
+      <h3>About Me</h3>
+      <p>My name is Gabriel Austin Comer, and I am a senior undergraduate student of Computer Science at the University of Texas at Arlington. My expected graduation date is May 2019, and I am currently seeking a career in software development.</p>
+
+      <h4>Technical Interests</h4>
+      <p><b>Computer vision</b> is an incredibly exciting field, and has boundless potential for applications in industry. I am eager to find those applications, and continue to learn as the technology grows and improves. My senior design project utilizes computer vision to analyze a Jenga tower, and I am working on a side project that uses template matching to count coins.</p>
+      <p>Programming <b>computer graphics</b> is incredibly fun, and the most engaging application of mathematics I know of. Take a look at my <a href="/bezier_curve.html">Bézier curve</a></li> and <a href="/bezier_patch.html">Bézier patch</a> demos to see what I mean. Last semester my graphics class created a simple wireframe renderer in python that was capable of performing parallel and perspective projections, with Euler rotations, and clipping. The model files used in this program specified vertices and faces, or vertices and Bézier patches.</p>
+
+      <h4>Hobbies</h4>
+      <dl>
+        <dt><b>Rock Climbing</b></dt>
+        <dd>Thankfully, UTA has a climbing wall in their activity center. Otherwise, I would probably spend all my money on climbing. It is such an engaging sport, because it utilizes your arms, legs, and core to maintain balance and push your body higher and higher. Solving routes and finding the path up a wall is incredibly rewarding, and nothing is more satisfying than matching your hands on the top hold.</dd>
+        <dt><b>D&amp;D</b></dt>
+        <dd>No matter what sort of game you like, there is a D&amp;D table out there for you. Even if you hate roleplay, nothing beats the comradery of sitting around a table with your friends, and kicking the snot out of some monsters. But the best part of D&amp;D, is running the game. I love writing, so running a homebrewed campaign has been a great exercise in creativity. Seeing my story come to life through my players actions is incredibly rewarding.</dd>
+        <dt><b></b></dt>
+      </dl>
+    </div>
+    <div class="content">
+      <footer>
+        <p>Posted by Gabriel Comer<br>
+        Email me at gabe.comer7@gmail.com <br>
+        <a href="mailto:gabe.comer7@gmail.com?subject=You're hired!">Hire me!</a></p>
+      </footer>
+    </div>
   </body>
-  <footer>
-    <p>Posted by Gabriel Comer <br>
-    Email me at gabe.comer7@gmail.com <br>
-    <a href="mailto:gabe.comer7@gmail.com?subject=You're hired!">Hire me!</a></p>
-  </footer>
 </html>

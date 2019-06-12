@@ -39,7 +39,7 @@ function init() {
 	camera.lookAt(new THREE.Vector3(0, 0, 0));
 
 	renderer = new THREE.WebGLRenderer();
-	renderer.setSize(window.innerWidth, window.innerHeight);
+	renderer.setSize(600,450);//window.innerWidth/2, window.innerHeight/2);
 	document.getElementById('webgl').appendChild(renderer.domElement);
 	renderer.render(
 		scene,

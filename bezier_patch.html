@@ -3,15 +3,42 @@
   <head>
     <meta charset="utf-8">
     <title>A B&eacute;zier Patch example using three.js</title>
-    <style type="text/css">
-      html, body {margin: 0; padding: 0; overflow: hidden}
-    </style>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <div id="webgl"></div>
+    <script src="sidebar.js"></script>
+    <nav class="sidebar">
+      <ul>
+        <li><a href="javascript:void(0)" class="closebutton" onclick="closeNav()" style="text-align: right; font-size: 2em;">&times;</a></li>
+        <li><a href="/er.html">Home</a></li>
+        <li><a href="/resume.pdf">Résumé</a></li>
+        <li><a href="/about.html">About Me</a></li>
+        <li><a href="/bezier_curve.html">Bézier Curve demo</a></li>
+      </ul>
+    </nav>
+    <button class="openbutton" onclick="openNav()">&#9776;</button>
+    <div class="content">
+      <header>
+        <h1>Gabriel Comer's Website</h1>
+        <h2>B&eacute;zier Patch Demo</h2>
+      </header>
+      <hr />
+    </div>
+    <div class="content" id="webgl"></div>
   	<script src="/lib/dat.gui.min.js"></script>
   	<script src="/lib/three.js"></script>
   	<script src="/lib/OrbitControls.js"></script>
   	<script src="./bezier_patch.js"></script>
+    <div class="content">
+      <h3>Instructions</h3>
+      <p>Click "Open Controls" at the top right, and adjust the y-position of the control points to see how the surface changes. The resolution variable effects how many vertices appear on the surface. Left-click and drag to rotate the rendered objects, and scroll to zoom in and out.</p>
+    </div>
+    <div class="content">
+      <footer>
+        <p>Posted by Gabriel Comer<br>
+        Email me at gabe.comer7@gmail.com <br>
+        <a href="mailto:gabe.comer7@gmail.com?subject=You're hired!">Hire me!</a></p>
+      </footer>
+    </div>
   </body>
 </html>

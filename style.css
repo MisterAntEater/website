@@ -1,42 +1,82 @@
-html{
+body{
   font-family: Helvetica, Arial, sans-serif;
   text-align: left;
+  width: 100%;
+  margin: 0;
+/*  background-color: #18121e;*/
+  background-color: #6d7993;
 }
 
-header{
+.portrait{
+    border-radius: 50%;
+    width: 50%;
+    height: 50%;
+    margin: 0 auto;
+    display: block;
 }
-ul{
-  list-style-type: none;
-  padding: 0;
-}
-aside{
-  float: left;
-  color: white;
-  padding-right: 50px;
-  background-color: black;
-}
+
 .content{
-  float: left;
+/*  color: #bbb;*/
+  color: #f4f4f4;
+  width: 60%;
+  margin: 0 auto;
+  padding: 10px;
+/*  background-color: #233237;*/
+  background-color: #9099a2;
 }
+
 footer{
-  clear: both;
+  text-align: center;
+  font-size: .75em;
+  color: #e3e3e3;
 }
 
-a:link {
-  color: #fff;
+nav{
+  width: auto;
+  margin: 0;
+  position: fixed;
+  height: 100%;
+/*  background-color: #984b43;*/
+  background-color: #96858f;
+  border-right: solid 2px
+  visibility: hidden;
 }
 
-/* visited link */
-a:visited {
-  color: #ddd;
+nav ul{
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+nav a{
+  display: inline-block;
+  width: auto;
+  margin: 10px;
+  padding: 20px 10px;
+  text-decoration: none;
+}
+
+a {
+  color: #f4f4f4;
+/*  color: #eac67a;*/
 }
 
 /* mouse over link */
 a:hover {
-  color: #ada;
+  color: #fff;
 }
 
-/* selected link */
-a:active {
-  color: #fff;
+button{
+  background-color: #96858f;
+  float: left;
+  color: #bbb;
+  border: none;
+  font-size: 2em;
+}
+
+#webgl canvas{
+  width: 600px;
+  height: 450px;
+  display: block;
+  margin: 0 auto;
 }
